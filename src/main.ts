@@ -1,13 +1,14 @@
 // import 'animate.css'
 // import 'normalize.css'
-// import 'virtual:windi-devtools'
-// import 'virtual:windi.css'
-import { createApp } from 'vue'
-import App from './App.vue'
-import { setupElementPlus } from './plugins/element-plus'
-import { setupVant } from './plugins/vant'
-import router from './router/'
-import store from './store/'
+import '@icon-park/vue-next/styles/index.css';
+import 'virtual:windi-devtools';
+import 'virtual:windi.css';
+import { createApp } from 'vue';
+import App from './App.vue';
+import { setupElementPlus } from './plugins/element-plus';
+import { setupVant } from './plugins/vant';
+import router from './router/';
+import store from './store/';
 
 
 
