@@ -399,6 +399,11 @@
   "resolved" "http://registry.npm.oa.com/@types/json-schema/download/@types/json-schema-7.0.9.tgz"
   "version" "7.0.9"
 
+"@types/lodash@^4.14.178":
+  "integrity" "sha1-NB9tIkfbUo1KE927N0vNyAQG9Pg="
+  "resolved" "http://registry.npm.oa.com/@types/lodash/download/@types/lodash-4.14.178.tgz"
+  "version" "4.14.178"
+
 "@types/minimist@^1.2.0":
   "integrity" "sha1-7nceK6Sz3Fs3KTXVSf2WF780W4w="
   "resolved" "http://registry.npm.oa.com/@types/minimist/download/@types/minimist-1.2.2.tgz"
@@ -3428,10 +3433,10 @@
     "ip" "^1.1.5"
     "smart-buffer" "^4.1.0"
 
-"sortablejs@1.10.2":
-  "integrity" "sha1-bkA2TZE/mLhaFPZnj5K1wSIfUpA="
-  "resolved" "http://registry.npm.oa.com/sortablejs/download/sortablejs-1.10.2.tgz"
-  "version" "1.10.2"
+"sortablejs@^1.14.0", "sortablejs@1.14.0":
+  "integrity" "sha1-bS4XzL2yX0ZHNN9iHU811Ks1s9g="
+  "resolved" "http://registry.npm.oa.com/sortablejs/download/sortablejs-1.14.0.tgz"
+  "version" "1.14.0"
 
 "source-map-js@^1.0.1", "source-map-js@>=0.6.2 <2.0.0":
   "integrity" "sha1-oXQcEx48d9BIJSrfok4juQhnDK8="
@@ -4003,6 +4008,11 @@
   "resolved" "http://registry.npm.oa.com/vue-demi/download/vue-demi-0.12.1.tgz"
   "version" "0.12.1"
 
+"vue-draggable-next@^2.1.1":
+  "integrity" "sha1-SYhtqC8RbRGz5N92dDIP2s9dfgQ="
+  "resolved" "http://registry.npm.oa.com/vue-draggable-next/download/vue-draggable-next-2.1.1.tgz"
+  "version" "2.1.1"
+
 "vue-router@^4.0.12":
   "integrity" "sha1-jceSzd9bsavMOQj5BkE23n4TxGA="
   "resolved" "http://registry.npm.oa.com/vue-router/download/vue-router-4.0.12.tgz"
@@ -4018,7 +4028,7 @@
     "@volar/shared" "0.29.8"
     "vscode-vue-languageservice" "0.29.8"
 
-"vue@^2.6.0 || ^3.2.0", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.0.2", "vue@^3.2.0", "vue@^3.2.25", "vue@>= 2.5 < 3", "vue@3.2.26", "vue@3.x":
+"vue@^2.6.0 || ^3.2.0", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.0.1", "vue@^3.0.2", "vue@^3.2.0", "vue@^3.2.2", "vue@^3.2.25", "vue@>= 2.5 < 3", "vue@3.2.26", "vue@3.x":
   "integrity" "sha1-XbV1WD7K5JXHyqXBL9WQ3/y7dj4="
   "resolved" "http://registry.npm.oa.com/vue/download/vue-3.2.26.tgz"
   "version" "3.2.26"
@@ -4029,12 +4039,12 @@
     "@vue/server-renderer" "3.2.26"
     "@vue/shared" "3.2.26"
 
-"vuedraggable@^2.24.3":
-  "integrity" "sha1-Q8k4SbdGokzlA+Ej1bJZxwG6DRk="
-  "resolved" "http://registry.npm.oa.com/vuedraggable/download/vuedraggable-2.24.3.tgz"
-  "version" "2.24.3"
+"vuedraggable@^4.1.0":
+  "integrity" "sha1-7ezmituKTZ4GrM/538kEDmaFInA="
+  "resolved" "http://registry.npm.oa.com/vuedraggable/download/vuedraggable-4.1.0.tgz"
+  "version" "4.1.0"
   dependencies:
-    "sortablejs" "1.10.2"
+    "sortablejs" "1.14.0"
 
 "vuex@^4.0.2":
   "integrity" "sha1-+Jbb1b8qDpY/AMZ+m2EN50nMrMk="

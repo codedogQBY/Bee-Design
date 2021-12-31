@@ -17,7 +17,7 @@ export enum EditorPropsType {
     crossSortable = 'CrossSortable'
 }
 
-export type VisualEditorProps = {
+export type EditorProps = {
     type: EditorPropsType
     /** 表单项标签名称 */
     label: string
@@ -29,7 +29,7 @@ export type VisualEditorProps = {
     defaultValue?: any
 } & {
     /** 可选项 */
-    options?: VisualEditorSelectOptions
+    options?: EditorSelectOptions
     /** 是否可以多选 */
     multiple?: boolean
     /** 项属性配置 */
@@ -38,7 +38,7 @@ export type VisualEditorProps = {
     max?: number
     min?: number
 } & {
-    table?: VisualEditorTableOption
+    table?: EditorTableOption
 }
 
 /*---------------------------------------modelBind-------------------------------------------*/
@@ -52,7 +52,7 @@ export function createEditorModelBindProp({
     label = '字段绑定',
     defaultValue,
     tips
-}: EditorModelBindProp): VisualEditorProps {
+}: EditorModelBindProp): EditorProps {
     return {
         type: EditorPropsType.modelBind,
         label,
@@ -72,7 +72,7 @@ export function createEditorSwitchProp({
     label,
     defaultValue,
     tips
-}: EditorSwitchProp): VisualEditorProps {
+}: EditorSwitchProp): EditorProps {
     return {
         type: EditorPropsType.switch,
         label,
@@ -93,7 +93,7 @@ export function createEditorInputProp({
     label,
     defaultValue,
     tips
-}: EditorInputProp): VisualEditorProps {
+}: EditorInputProp): EditorProps {
     return {
         type: EditorPropsType.input,
         label,
@@ -117,7 +117,7 @@ export function createEditorInputNumberProp({
     max,
     min,
     tips
-}: EditorInputNumberProp): VisualEditorProps {
+}: EditorInputNumberProp): EditorProps {
     return {
         type: EditorPropsType.inputNumber,
         label,
@@ -135,7 +135,7 @@ interface EditorColorProp {
     defaultValue?: string
 }
 
-export function createEditorColorProp({ label, defaultValue }: EditorColorProp): VisualEditorProps {
+export function createEditorColorProp({ label, defaultValue }: EditorColorProp): EditorProps {
     return {
         type: EditorPropsType.color,
         label,
@@ -145,7 +145,7 @@ export function createEditorColorProp({ label, defaultValue }: EditorColorProp):
 
 /*---------------------------------------select-------------------------------------------*/
 
-export type VisualEditorSelectOptions = {
+export type EditorSelectOptions = {
     label: string
     value: string | number | boolean | object
     [prop: string]: any
@@ -153,7 +153,7 @@ export type VisualEditorSelectOptions = {
 
 interface EditorSelectProp {
     label: string
-    options: VisualEditorSelectOptions
+    options: EditorSelectOptions
     defaultValue?: any
     multiple?: boolean
     tips?: string
@@ -165,7 +165,7 @@ export function createEditorSelectProp({
     defaultValue,
     tips,
     multiple
-}: EditorSelectProp): VisualEditorProps {
+}: EditorSelectProp): EditorProps {
     return {
         type: EditorPropsType.select,
         label,
@@ -178,7 +178,7 @@ export function createEditorSelectProp({
 
 /*---------------------------------------table-------------------------------------------*/
 
-export type VisualEditorTableOption = {
+export type EditorTableOption = {
     options: {
         label: string // 列显示文本
         field: string // 列绑定的字段
@@ -188,7 +188,7 @@ export type VisualEditorTableOption = {
 
 interface EditorTableProp {
     label: string
-    option: VisualEditorTableOption
+    option: EditorTableOption
     defaultValue?: { label: string; value: string }[]
 }
 
@@ -196,7 +196,7 @@ export function createEditorTableProp({
     label,
     option,
     defaultValue
-}: EditorTableProp): VisualEditorProps {
+}: EditorTableProp): EditorProps {
     return {
         type: EditorPropsType.table,
         label,
@@ -212,7 +212,7 @@ interface EditorCrossSortableProp {
     labelPosition: 'top' | ''
     multiple?: boolean
     showItemPropsConfig?: boolean
-    defaultValue?: string[] | VisualEditorSelectOptions
+    defaultValue?: string[] | EditorSelectOptions
 }
 
 export function createEditorCrossSortableProp({
@@ -221,7 +221,7 @@ export function createEditorCrossSortableProp({
     multiple,
     showItemPropsConfig,
     defaultValue
-}: EditorCrossSortableProp): VisualEditorProps {
+}: EditorCrossSortableProp): EditorProps {
     return {
         type: EditorPropsType.crossSortable,
         label,
